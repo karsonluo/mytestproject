@@ -1,0 +1,13 @@
+com\karsontest\myspringtest\config\ActiveMQConfig.class
+com\karsontest\myspringtest\service\UserService.class
+com\karsontest\myspringtest\comsumer\MQConsumer.class
+com\karsontest\myspringtest\dao\UserMapper.class
+com\karsontest\myspringtest\producter\MQProducter.class
+com\karsontest\myspringtest\entity\User.class
+com\karsontest\myspringtest\controllers\TestController.class
+com\karsontest\myspringtest\producter\QueueProducter.class
+com\karsontest\myspringtest\comsumer\QueueComsumer.class
+com\karsontest\myspringtest\comsumer\TopComsumer.class
+com\karsontest\myspringtest\MyApplication.class
+com\karsontest\myspringtest\service\impl\UserServiceImpl.class
+com\karsontest\myspringtest\producter\TopicProducter.class

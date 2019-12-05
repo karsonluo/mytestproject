@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--namespace 路径 指向dao层接口-->
+<mapper namespace="com.karsontest.myspringtest.dao.UserMapper" >
+  
+  <sql id="Base_Column_List" >
+  	user_id,username,age
+  </sql>
+          
+  <!--resultType 指向entity中对应的实体-->
+  <select id="query" parameterType="map" resultType="com.karsontest.myspringtest.entity.User">
+    select  <include refid="Base_Column_List"></include>
+    from users
+  </select>
+    <select id="hello" parameterType="map" resultType="com.karsontest.myspringtest.entity.User">
+    select  user_id as userid ,username as userName, age as age
+    from users
+  </select>
+ 
+</mapper>
